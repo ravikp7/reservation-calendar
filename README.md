@@ -7,9 +7,11 @@ Description
 For this assignment you have to implement a simple calendar that keeps track of reservations for a single room. The backend API you'll use is provided for you in this repository and will keep track of who has the room for which day. The application should have the three main functionalities: adding a tenant to a day, removing a tenant from a day, and moving between months to see all the dates.
 
 The following is a mockup for confirming a stay on the calendar.
+<br>
 ![Confirm Stay](images/ConfirmStay.png)
 
 The following is a mockup for cancelling a stay on the calendar.
+<br>
 ![Cancel Stay](images/CancelStay.png)
 
 Getting Started
@@ -97,7 +99,7 @@ Feel free to edit the backend code at any time! Just make sure to mention it in 
 
 Constraints & Requirements
 --------------------------
-You have to use **AngularJS**. It could be in any version of Javascript (ES6+ or ES5 it doesn't matter). You can use any other library to help you with the CSS and Javascript.
+You have to use **AngularJS**. It could be in any version of Javascript (ES6+ or ES5 it doesn't matter). You are **not** allowed to use a library for the calendar system that you're going to implement, that has be implemented by you. You can use any other library to help you with the CSS and Javascript.
 
 Your application has to have the following:
 - A way to navigate between months.
