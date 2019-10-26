@@ -92,6 +92,8 @@ Accept: application/json
 }
 ```
 
+Feel free to edit the backend code at any time! Just make sure to mention it in your README.
+
 
 Constraints & Requirements
 --------------------------
