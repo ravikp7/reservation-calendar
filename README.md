@@ -8,9 +8,11 @@ For this assignment you have to implement a simple calendar that keeps track of 
 
 The following is a mockup for confirming a stay on the calendar.
 <br>
+<br>
 ![Confirm Stay](images/ConfirmStay.png)
 
 The following is a mockup for cancelling a stay on the calendar.
+<br>
 <br>
 ![Cancel Stay](images/CancelStay.png)
 
