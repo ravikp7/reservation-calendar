@@ -10,17 +10,21 @@ The following is a mockup for confirming a stay on the calendar.
 ![Confirm Stay](images/ConfirmStay.png)
 
 The following is a mockup for cancelling a stay on the calendar.
-![Cancel Stay](images/CancelStay.jpg)
+![Cancel Stay](images/CancelStay.png)
 
 Getting Started
 ---------------
 
 Install the package dependencies by running the following command:
 
+```
 npm install
+```
 Once the dependancies are installed, you can start the application server by running
 
+```
 npm start
+```
 Once the server is running, you can start making requests to http://localhost:3000.
 
 
@@ -33,7 +37,7 @@ The following is an example of some of the requests that can be made to the back
     "time": 1578394800
 }
 ```
-Where the time is a unix timestamp.
+Where the `time` is a unix timestamp.
 
 To get the reserved dates you have to pass the start timestamp and end timestamp in the header like so:
 ```
@@ -43,9 +47,9 @@ Accept: application/json
 
 > Response
 [
-  	{
-  		"tennantName": "Carson Rhodes",
-  		"time": 1578394800
+	{
+		"tennantName": "Carson Rhodes",
+		"time": 1578394800
     },
     {
     	"tennantName": "Giovanni Ferrell",
@@ -101,10 +105,6 @@ Your application has to have the following:
 
 You should be able to complete this task in 5-6 hours if you're familiar with AngularJS.
 
-Submission
-----------
-You should upload your code to a Github repository (private or public) and share it with me. Your repository should have a README.md that explains how to run the code and if you’ve done anything extra. If you fail to produce this repository within the time period mentioned in the email you received your application will be rejected.
-
 Evaluation
 ----------
 In this assignment we would like to see the following:
@@ -116,6 +116,7 @@ In this assignment we would like to see the following:
 - Easily scalable code design.
 - Well-commented code.
 - Code Cleanliness.
+- Clean commit history that reveal the evolution of this application
 - If the code is opened in different pages there is bound to be race conditions which will lead to some errors; your code should handle that gracefully.
 
 Remember, you can contact me at yasser@meddy.com at any time for any reason. **You will not be penalized at all for asking questions.**
@@ -131,4 +132,8 @@ Solutions that have extra things too are a plus. You can add a lot to this simpl
 
 Sky's the limit. The more you do the better we perceive your candidacy.
 
-Also keep in mind that if you don't know AngularJS I will be keeping that in mind as I'm evaluating your submission.
+Also if you don't know AngularJS I will be keeping that in mind as I'm evaluating your submission.
+
+Submission
+----------
+You should upload your code to a Github repository (private or public) and share it with me. Your repository should have a README.md that explains how to run the code and if you’ve done anything extra. If you fail to produce this repository within the time period mentioned in the email you received your application will be rejected.
