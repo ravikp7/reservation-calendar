@@ -51,9 +51,9 @@ Accept: application/json
 
 > Response
 [
-	{
-		"tennantName": "Carson Rhodes",
-		"time": 1578394800
+    {
+	"tennantName": "Carson Rhodes",
+	"time": 1578394800
     },
     {
     	"tennantName": "Giovanni Ferrell",
@@ -66,7 +66,7 @@ Accept: application/json
 ]
 ```
 
-To reserve a single date you need to pass in a date and a name:
+To reserve a single date you need to pass in a date and a name and `reserve` with `true` (if you want to unreserve that you have to pass it in with `false`):
 ```
 > Request
 POST localhost:3000/reserve   HTTP/1.1
@@ -74,7 +74,8 @@ Accept: application/json
 
 {
 	"tennantName": "Jimmy Carter",
-	"time": 1578394800
+	"time": 1578394800,
+	"reserve": true
 },
 
 > Response
