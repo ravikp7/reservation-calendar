@@ -75,7 +75,7 @@ Accept: application/json
 {
 	"tennantName": "Jimmy Carter",
 	"time": 1578394800,
-	"reserve": true
+	"reserved": true
 },
 
 > Response
