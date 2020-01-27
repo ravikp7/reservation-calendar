@@ -102,7 +102,7 @@ Feel free to edit the backend code at any time! Just make sure to mention it in 
 
 Constraints & Requirements
 --------------------------
-You have to use **AngularJS 1.x**. It could be in any version of Javascript (ES6+ or ES5 it doesn't matter). You are **not** allowed to use a library for the calendar system that you're going to implement, that has be implemented by you. You can use any other library to help you with the CSS and Javascript.
+**You can use any framework you'd like**. It could be in any version of Javascript (ES6+ or ES5 it doesn't matter). You are **not** allowed to use a library for the calendar system that you're going to implement, that has be implemented by you. You can use any other library to help you with the CSS and Javascript. Since I'm testing creativity and code design, I recommend you use whatever you're most comfortable with.
 
 Your application has to have the following:
 - A way to navigate between months.
@@ -110,7 +110,7 @@ Your application has to have the following:
 - A way to remove tennants from a day.
 - A clear README on how to set up your submission.
 
-You should be able to complete this task in 5-6 hours if you're familiar with AngularJS.
+You should be able to complete this task in 5-6 hours.
 
 Evaluation
 ----------
@@ -130,7 +130,7 @@ Remember, you can contact me at yasser@meddy.com at any time for any reason. **Y
 
 Keep in mind
 ------------
-This is a relatively simple task if you are familiar with AngularJS. That's intentional. The point of this task isn't to do the bare minimum. What we look for in a candidate is one that is going to provide a well engineered solution.
+This is a relatively simple task. That's intentional. The point of this task isn't to do the bare minimum. What we look for in a candidate is one that is going to provide a well engineered solution.
 
 Solutions that have extra things too are a plus. You can add a lot to this simple application like:
 - Feature to select multiple dates in one go.
@@ -138,8 +138,6 @@ Solutions that have extra things too are a plus. You can add a lot to this simpl
 - Feature to show the list of tennants outside for readability.
 
 Sky's the limit. The more you do the better we perceive your candidacy.
-
-Also if you don't know AngularJS I will be keeping that in mind as I'm evaluating your submission.
 
 Submission
 ----------
