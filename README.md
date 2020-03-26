@@ -72,11 +72,11 @@ To reserve a single date you need to pass in a date and a name and `reserve` wit
 POST localhost:3000/reserve   HTTP/1.1
 Accept: application/json
 
-{
+[{
 	"tennantName": "Jimmy Carter",
 	"time": 1578394800,
 	"reserved": true
-},
+}],
 
 > Response
 {

@@ -53,57 +53,59 @@ app.get('/reserve/:start/:end', function(request, response) {
 
 // End-point to change
 app.post('/reserve', function(request, response) {
-    var body = request.body;
-    var date = body.time;
+    const body = request.body;
+    const { reservations } = body;
+    
+    for (let i = 0; i < reservations.length; i++) {
+        let { date, tennantName, reserved } = reservations[i];
 
-    if (isNaN(date)) {
-        response.status(400);
-        response.send('Date is NaN');
-        return;
-    } else {
-        var reserved = body.reserved;
-        var name = body.tennantName;
-
-        date = moment.unix(date).tz(locale).startOf('day').unix();
-
-        var tennantData = {
-            "tennantName": name,
-            "time": date
-        };
-
-        var isReserved = _.filter(data, function(night) {
-            var nightTime = night["time"];
-            return date == nightTime;
-        }).length;
-
-        console.log(isReserved);
-
-        if (reserved && isReserved) {
+        if (isNaN(date)) {
             response.status(400);
-            response.send('Slot already reserved');
+            response.send('A date is NaN');
             return;
-        }
-
-        if (!reserved && !isReserved) {
-            response.status(400);
-            response.send('Slot not found');
-            return;
-        }
-
-        if (reserved) {
-            data.push(tennantData);
         } else {
-            _.remove(data, (currentObject) => {
-                return tennantData.time == currentObject.time;
-            });
+            date = moment.unix(date).tz(locale).startOf('day').unix();
+
+            const tennantData = {
+                tennantName,
+                time: date,
+            };
+
+            var isReserved = _.filter(data, function(night) {
+                var nightTime = night["time"];
+                return date == nightTime;
+            }).length;
+
+            console.log(isReserved);
+
+            if (reserved && isReserved) {
+                response.status(400);
+                response.send('A slot is already reserved');
+                return;
+            }
+
+            if (!reserved && !isReserved) {
+                response.status(400);
+                response.send('A slot not found');
+                return;
+            }
+
+            if (reserved) {
+                data.push(tennantData);
+            } else {
+                _.remove(data, (currentObject) => {
+                    return tennantData.time == currentObject.time;
+                });
+            }
+
         }
-
-        console.log(data);
-
-        send(response, {
-            success: true
-        });
     }
+
+    console.log(data);
+
+    send(response, {
+        success: true
+    });
 });
 
 // Get server time
