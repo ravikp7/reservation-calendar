@@ -115,6 +115,6 @@ app.get('/now', function(request, response) {
     });
 });
 
-var port = 3000;
+var port = 3001;
 console.info("API server listening at http://localhost:" + port)
 app.listen(port);
